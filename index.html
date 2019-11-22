@@ -5,9 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script src="main.js"></script>
+  <script defer src="main.js"></script>
+  <style>
+    body {
+      background: #333;
+    }
+    #wrap {
+      background: #eee;
+      height: 500px;
+      width: 800px;
+      position: relative;
+    }
+    .sheet {
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      position: absolute;
+      z-index: 0;
+    }
+    .used {
+      border: 1px solid green;
+      background: #fff;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
-  
+  <div id="wrap">
+
+  </div>
 </body>
 </html>
